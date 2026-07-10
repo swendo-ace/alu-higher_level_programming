@@ -1,2 +1,3 @@
 # alu-higher_level_programming
-ALU higher level programming projects.
+
+Python projects for the ALU Higher Level Programming track.
