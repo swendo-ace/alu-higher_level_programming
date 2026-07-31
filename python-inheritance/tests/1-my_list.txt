@@ -1,0 +1,33 @@
+=========================
+How to Use 1-my_list.py
+=========================
+
+Import the class:
+
+>>> MyList = __import__('1-my_list').MyList
+
+Test printing a sorted list without modifying the original:
+
+>>> my_list = MyList([3, 1, 2])
+>>> my_list.print_sorted()
+[1, 2, 3]
+>>> print(my_list)
+[3, 1, 2]
+
+Test with an empty list:
+
+>>> empty = MyList()
+>>> empty.print_sorted()
+[]
+
+Test with negative numbers:
+
+>>> nums = MyList([5, -1, 0, -3])
+>>> nums.print_sorted()
+[-3, -1, 0, 5]
+
+Test with already-sorted input:
+
+>>> already = MyList([1, 2, 3])
+>>> already.print_sorted()
+[1, 2, 3]
