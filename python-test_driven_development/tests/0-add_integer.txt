@@ -45,7 +45,7 @@ TypeError: a must be an integer
 
 A string first argument raises TypeError:
 
->>> add_integer("hello", 4)
+>>> add_integer("hello")
 Traceback (most recent call last):
 TypeError: a must be an integer
 
