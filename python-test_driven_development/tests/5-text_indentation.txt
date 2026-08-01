@@ -1,0 +1,59 @@
+===============================
+How to Use 5-text_indentation.py
+===============================
+
+Import the function:
+
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+A simple sentence ending in a period:
+
+>>> text_indentation("Hello.")
+Hello.
+<BLANKLINE>
+
+Text with a period and more content:
+
+>>> text_indentation("Hi. There")
+Hi.
+<BLANKLINE>
+There
+
+A question mark also triggers a break:
+
+>>> text_indentation("Really?")
+Really?
+<BLANKLINE>
+
+A colon triggers a break:
+
+>>> text_indentation("Note: this")
+Note:
+<BLANKLINE>
+this
+
+Leading and trailing spaces around a segment are stripped:
+
+>>> text_indentation("   Hi.   Bye.   ")
+Hi.
+<BLANKLINE>
+Bye.
+<BLANKLINE>
+
+A non-string argument raises TypeError:
+
+>>> text_indentation(12)
+Traceback (most recent call last):
+TypeError: text must be a string
+
+A None argument raises TypeError:
+
+>>> text_indentation(None)
+Traceback (most recent call last):
+TypeError: text must be a string
+
+Calling with no argument raises TypeError:
+
+>>> text_indentation()
+Traceback (most recent call last):
+TypeError: text_indentation() missing 1 required positional argument: 'text'
