@@ -9,8 +9,7 @@ are int or float, casts them to integers, and returns their sum.
 def add_integer(a, b=98):
     """Return the integer addition of a and b.
 
-    Both must be int or float; floats are cast to int before adding.
-    """
+    Floats are cast to int before adding."""
     if not isinstance(a, (int, float)):
         raise TypeError("a must be an integer")
     if not isinstance(b, (int, float)):
